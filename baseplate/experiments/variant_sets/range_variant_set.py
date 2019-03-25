@@ -61,7 +61,7 @@ class RangeVariantSet(VariantSet):
 
         for variant in self.variants:
             if (bucket >= int(variant['range_start'] * self.num_buckets) and
-                bucket < int(variant['range_end'] * self.num_buckets)):
+                    bucket < int(variant['range_end'] * self.num_buckets)):
                 return variant['name']
 
         return None
